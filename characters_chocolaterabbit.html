@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA GOES HERE -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Characters</title>
+    <link href="style2.css" rel="stylesheet" />
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- FREDOKA FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+
+    <!-- GABARITO FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet" />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style></style>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/png" href="images/tabicon.png">
+</head>
+
+<body>
+    <main class="home-mobile d-block d-md-none">
+
+
+        <!-- MOBILE Navigation Bar-->
+        <nav class="navbar navbar-expand-lg position-relative custom-navbar d-md-none">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Left Buttons -->
+
+                <div class="d-flex gap-3">
+                    <!-- Menu Button -->
+                    <button class="btn btn-light rounded-circle p-2" style="width: 40px; height: 40px" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <svg width="53" height="53" viewBox="29 29 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M63.0498 33H36.6498C34.6394 33 33.0098 34.6297 33.0098 36.64V36.82C33.0098 38.8303 34.6394 40.46 36.6498 40.46H63.0498C65.0601 40.46 66.6898 38.8303 66.6898 36.82V36.64C66.6898 34.6297 65.0601 33 63.0498 33Z"
+                                fill="#ED4F68" />
+                            <path
+                                d="M63.04 46.1104H36.66C34.6386 46.1104 33 47.749 33 49.7704V49.9704C33 51.9917 34.6386 53.6304 36.66 53.6304H63.04C65.0614 53.6304 66.7 51.9917 66.7 49.9704V49.7704C66.7 47.749 65.0614 46.1104 63.04 46.1104Z"
+                                fill="#ED4F68" />
+                            <path
+                                d="M63.0417 59.2572L36.6617 59.3032C34.6459 59.3067 33.0146 60.9437 33.0181 62.9596L33.0184 63.1396C33.0219 65.1554 34.6589 66.7867 36.6748 66.7832L63.0547 66.7371C65.0706 66.7336 66.7019 65.0966 66.6984 63.0808L66.698 62.9008C66.6945 60.8849 65.0575 59.2536 63.0417 59.2572Z"
+                                fill="#ED4F68" />
+                        </svg>
+                    </button>
+
+                    <!-- Search Button -->
+                    <button class="btn btn-light rounded-circle p-2" style="width: 40px; height: 40px" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <svg width="45" height="45" viewBox="26 26 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M72.5164 72.5028C70.8264 74.2028 68.8864 73.7128 67.3764 72.1428C65.9631 70.6762 61.7797 66.4928 54.8264 59.5928C54.6967 59.4659 54.5936 59.3139 54.5232 59.1456C54.4528 58.9773 54.4165 58.7962 54.4164 58.6128V56.1928C54.4165 56.0351 54.3721 55.8805 54.2884 55.7468C54.2047 55.6131 54.0851 55.5057 53.9431 55.4368C53.8012 55.3679 53.6428 55.3404 53.486 55.3574C53.3292 55.3744 53.1803 55.4352 53.0564 55.5328C45.1264 61.8728 33.5764 59.8728 28.3864 51.0628C24.4164 44.3328 25.4964 36.3228 30.9064 30.9128C36.3164 25.5028 44.3264 24.4128 51.0564 28.3828C59.8664 33.5728 61.8764 45.1128 55.5364 53.0528C55.4388 53.1767 55.378 53.3256 55.361 53.4824C55.344 53.6392 55.3715 53.7976 55.4404 53.9396C55.5093 54.0815 55.6167 54.2011 55.7504 54.2848C55.8841 54.3685 56.0387 54.4129 56.1964 54.4128H58.6164C58.7998 54.4129 58.9809 54.4492 59.1492 54.5196C59.3175 54.59 59.4695 54.6931 59.5964 54.8228C66.5031 61.7695 70.6897 65.9495 72.1564 67.3628C73.7264 68.8728 74.2164 70.8028 72.5164 72.5028ZM54.4964 42.6328C54.4964 39.49 53.2479 36.4759 51.0256 34.2536C48.8033 32.0313 45.7892 30.7828 42.6464 30.7828C39.5036 30.7828 36.4895 32.0313 34.2672 34.2536C32.0449 36.4759 30.7964 39.49 30.7964 42.6328C30.7964 45.7756 32.0449 48.7897 34.2672 51.012C36.4895 53.2343 39.5036 54.4828 42.6464 54.4828C45.7892 54.4828 48.8033 53.2343 51.0256 51.012C53.2479 48.7897 54.4964 45.7756 54.4964 42.6328Z"
+                                fill="#ED4F68" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Center Logo-->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img class="logo" src="images/logo.png" alt="Logo" />
+                </a>
+
+                <!-- Right Buttons -->
+
+                <div class="d-flex gap-3">
+                    <!-- Cart Button -->
+                    <button class="btn btn-light rounded-circle p-2" style="width: 40px; height: 40px" type="button">
+                        <svg width="44" height="44" viewBox="24 24 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M50.0076 27C55.2624 27 59.0447 27.0152 61.3544 27.0456C62.1166 27.0555 62.8594 27.2862 63.493 27.7098C64.1266 28.1334 64.6239 28.7319 64.9249 29.4329L71.037 43.65C71.1226 43.8487 71.2642 44.0179 71.4443 44.1368C71.6244 44.2557 71.8352 44.319 72.0507 44.319H74.4562C74.8483 44.3187 75.2351 44.4095 75.5864 44.5844C75.9377 44.7593 76.244 45.0135 76.4814 45.3271C76.7187 45.6407 76.8806 46.0053 76.9545 46.3922C77.0284 46.7792 77.0121 47.1781 76.9071 47.5577L70.7344 70.0922C70.4422 71.152 69.8295 72.0943 68.9812 72.7889C68.1329 73.4835 67.0908 73.8961 65.999 73.9696C65.6561 73.9899 60.3206 74 49.9924 74C39.6542 73.9899 34.3136 73.9747 33.9707 73.9544C32.8816 73.8779 31.8429 73.4639 30.9975 72.7695C30.1522 72.0751 29.5418 71.1345 29.2504 70.077L23.0929 47.5425C22.9879 47.1629 22.9717 46.764 23.0455 46.377C23.1194 45.9901 23.2813 45.6255 23.5186 45.3119C23.756 44.9983 24.0623 44.7441 24.4136 44.5692C24.7649 44.3943 25.1517 44.3035 25.5438 44.3038H27.9493C28.1648 44.3038 28.3756 44.2405 28.5557 44.1216C28.7358 44.0027 28.8774 43.8335 28.963 43.6347L35.0903 29.4177C35.3912 28.7167 35.8885 28.1182 36.5221 27.6946C37.1557 27.271 37.8985 27.0403 38.6607 27.0304C40.9704 27.0101 44.7527 27 50.0076 27ZM34.3338 43.5435C34.2989 43.6265 34.285 43.7169 34.2932 43.8067C34.3015 43.8964 34.3316 43.9827 34.381 44.0579C34.4304 44.1331 34.4975 44.1949 34.5764 44.2378C34.6552 44.2807 34.7434 44.3034 34.8331 44.3038H65.1669C65.2566 44.3034 65.3448 44.2807 65.4236 44.2378C65.5025 44.1949 65.5696 44.1331 65.619 44.0579C65.6684 43.9827 65.6985 43.8964 65.7068 43.8067C65.715 43.7169 65.7011 43.6265 65.6662 43.5435L60.7946 32.2459C60.7531 32.1471 60.6837 32.0628 60.595 32.0033C60.5062 31.9438 60.402 31.9119 60.2954 31.9114H39.7349C39.6282 31.9119 39.5241 31.9438 39.4353 32.0033C39.3465 32.0628 39.2771 32.1471 39.2356 32.2459L34.3338 43.5435ZM42.6932 54.1618C42.6976 53.8463 42.6401 53.5331 42.5241 53.2399C42.408 52.9468 42.2356 52.6795 42.0168 52.4533C41.7979 52.2271 41.5369 52.0465 41.2486 51.9217C40.9603 51.7969 40.6503 51.7304 40.3364 51.726L40.1549 51.7234C39.841 51.719 39.5293 51.7768 39.2377 51.8935C38.946 52.0101 38.68 52.1834 38.455 52.4033C38.23 52.6233 38.0502 52.8856 37.9261 53.1754C37.8019 53.4652 37.7357 53.7767 37.7314 54.0921L37.5935 64.0052C37.5891 64.3206 37.6466 64.6339 37.7627 64.927C37.8788 65.2201 38.0511 65.4874 38.27 65.7136C38.4889 65.9398 38.7499 66.1204 39.0382 66.2452C39.3265 66.37 39.6365 66.4365 39.9503 66.4409L40.1319 66.4435C40.4458 66.4479 40.7574 66.3901 41.0491 66.2735C41.3408 66.1568 41.6067 65.9836 41.8318 65.7636C42.0568 65.5437 42.2365 65.2813 42.3607 64.9915C42.4849 64.7018 42.551 64.3903 42.5554 64.0748L42.6932 54.1618ZM52.4653 54.1368C52.4717 53.5199 52.234 52.9256 51.8045 52.4848C51.3749 52.044 50.7888 51.7927 50.1749 51.7862L49.9933 51.7843C49.6894 51.781 49.3878 51.838 49.1057 51.952C48.8236 52.0659 48.5667 52.2346 48.3495 52.4484C48.1323 52.6621 47.9591 52.9168 47.8399 53.1978C47.7206 53.4788 47.6576 53.7807 47.6544 54.0862L47.5498 64.1213C47.5434 64.7383 47.7811 65.3326 48.2107 65.7734C48.6402 66.2142 49.2264 66.4655 49.8402 66.4719L50.0218 66.4739C50.3258 66.4771 50.6274 66.4201 50.9094 66.3062C51.1915 66.1922 51.4484 66.0236 51.6656 65.8098C51.8828 65.5961 52.056 65.3414 52.1753 65.0604C52.2945 64.7794 52.3576 64.4775 52.3607 64.172L52.4653 54.1368ZM62.288 54.1245C62.2859 53.813 62.2227 53.505 62.1021 53.218C61.9815 52.9311 61.8058 52.6708 61.5851 52.4521C61.3644 52.2333 61.103 52.0604 60.8158 51.9433C60.5287 51.8261 60.2213 51.7669 59.9114 51.769L59.6996 51.7706C59.3896 51.7727 59.0832 51.8362 58.7976 51.9575C58.5121 52.0787 58.2531 52.2552 58.0355 52.477C57.8179 52.6988 57.6459 52.9615 57.5293 53.2502C57.4126 53.5388 57.3538 53.8477 57.3559 54.1592L57.4252 64.1336C57.4274 64.4452 57.4906 64.7532 57.6112 65.0401C57.7318 65.3271 57.9074 65.5874 58.1281 65.8061C58.3488 66.0248 58.6102 66.1977 58.8974 66.3149C59.1846 66.4321 59.4919 66.4913 59.8018 66.4891L60.0137 66.4876C60.3236 66.4854 60.6301 66.4219 60.9156 66.3007C61.2011 66.1795 61.4601 66.0029 61.6777 65.7811C61.8953 65.5593 62.0674 65.2966 62.184 65.008C62.3006 64.7194 62.3595 64.4105 62.3573 64.099L62.288 54.1245Z"
+                                fill="#ED4F68" />
+                        </svg>
+                    </button>
+                    <!-- Person Button -->
+                    <button class="btn btn-light rounded-circle p-2" style="width: 40px; height: 40px" type="button">
+                        <svg width="28" height="28" viewBox="7 2 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M35.5006 28.9367C36.3631 28.9367 37.5517 29.0156 39.0664 29.1734C39.2053 29.1886 39.346 29.1762 39.4801 29.1368C39.6142 29.0974 39.7392 29.0317 39.8477 28.9437C39.9563 28.8557 40.0464 28.747 40.1127 28.6239C40.179 28.5008 40.2202 28.3658 40.2339 28.2267C40.9597 21.7262 45.7246 9.65625 52.7299 6.97402C53.6317 6.62887 54.6336 6.65384 55.5193 7.04353C56.4049 7.43322 57.1032 8.15635 57.4633 9.05669C61.3446 18.618 55.8697 29.3469 49.7637 37.0938C49.511 37.411 49.3707 37.8031 49.365 38.2086C49.3593 38.6142 49.4885 39.0101 49.7322 39.3342C53.8975 44.9038 55.4437 55.0331 48.1228 58.7882C44.8726 60.4502 41.391 61.8597 37.6779 63.0167C37.5823 63.0457 37.4818 63.055 37.3828 63.0441C37.2837 63.0333 37.1883 63.0025 37.1024 62.9536C37.0165 62.9047 36.942 62.8388 36.8835 62.7601C36.8251 62.6814 36.784 62.5915 36.7628 62.496C36.0896 59.4772 36.6103 57.3104 38.3248 55.9956C38.4901 55.869 38.6216 55.7034 38.7074 55.5137C38.7932 55.324 38.8308 55.116 38.8167 54.9083C38.8026 54.7005 38.7374 54.4995 38.6268 54.3231C38.5162 54.1466 38.3637 54.0003 38.1828 53.8971C37.4886 53.4974 36.5945 53.2976 35.5006 53.2976C34.4067 53.2976 33.5126 53.4974 32.8184 53.8971C32.6375 54.0003 32.485 54.1466 32.3744 54.3231C32.2638 54.4995 32.1986 54.7005 32.1845 54.9083C32.1705 55.116 32.208 55.324 32.2938 55.5137C32.3797 55.7034 32.5111 55.869 32.6764 55.9956C34.3909 57.3104 34.9063 59.4772 34.2226 62.496C34.2014 62.5915 34.1603 62.6814 34.1019 62.7601C34.0435 62.8388 33.969 62.9047 33.8831 62.9536C33.7972 63.0025 33.7017 63.0333 33.6027 63.0441C33.5036 63.055 33.4031 63.0457 33.3075 63.0167C29.605 61.8597 26.1286 60.4502 22.8784 58.7882C15.5575 55.0174 17.1037 44.9038 21.2691 39.3342C21.5128 39.0101 21.6419 38.6142 21.6362 38.2086C21.6305 37.8031 21.4902 37.411 21.2375 37.0938C15.1315 29.3311 9.67239 18.6022 13.5537 9.04091C13.9168 8.14344 14.6164 7.42391 15.5017 7.03731C16.387 6.65071 17.3873 6.62798 18.2871 6.97402C25.2924 9.65625 30.0573 21.7262 30.7673 28.2267C30.781 28.3658 30.8223 28.5008 30.8886 28.6239C30.9549 28.747 31.0449 28.8557 31.1535 28.9437C31.2621 29.0317 31.387 29.0974 31.5212 29.1368C31.6553 29.1762 31.7959 29.1886 31.9348 29.1734C33.4495 29.0156 34.6381 28.9367 35.5006 28.9367ZM31.0197 47.6334C31.0197 47.0601 30.792 46.5103 30.3866 46.1049C29.9812 45.6995 29.4314 45.4718 28.8582 45.4718C28.2849 45.4718 27.7351 45.6995 27.3297 46.1049C26.9243 46.5103 26.6966 47.0601 26.6966 47.6334C26.6966 48.2066 26.9243 48.7564 27.3297 49.1618C27.7351 49.5672 28.2849 49.7949 28.8582 49.7949C29.4314 49.7949 29.9812 49.5672 30.3866 49.1618C30.792 48.7564 31.0197 48.2066 31.0197 47.6334ZM44.3519 47.6334C44.3519 47.0559 44.1225 46.5021 43.7142 46.0938C43.3059 45.6854 42.7521 45.456 42.1746 45.456C41.5971 45.456 41.0433 45.6854 40.635 46.0938C40.2267 46.5021 39.9973 47.0559 39.9973 47.6334C39.9973 48.2108 40.2267 48.7646 40.635 49.173C41.0433 49.5813 41.5971 49.8107 42.1746 49.8107C42.7521 49.8107 43.3059 49.5813 43.7142 49.173C44.1225 48.7646 44.3519 48.2108 44.3519 47.6334Z"
+                                fill="#ED4F68" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- END OF MOBILE Navigation Bar-->
+        <!-- MOBILE Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beep Boop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beep Boop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beep Boop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END OF MOBILE Offcanvas Menu -->
+
+        <!-- MOBILE CONTENT BEGINS -->
+        <section class="character-background">
+
+            <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="separator">/</li>
+                    <li><a href="characters_chocolaterabbit.html">Characters</a></li>
+                    <li class="separator">/</li>
+                    <li class="current">Chocolate Rabbit Family</li>
+                </ol>
+            </nav>
+
+            <section class="character-hero-mobile d-block d-md-none">
+
+                <div class="character-hero-layout">
+
+                    <!-- LEFT: INFO COLUMN -->
+                    <div class="character-info-panel">
+                        <img id="characterName" src="images/name_freya.png"
+                            class="character-name-img  character-transition" alt="Freya">
+
+                        <img src="images/character_divider.png" class="character-divider-img" alt="">
+
+                        <div class="character-desc character-transition">
+                            <p id="characterDesc">
+
+                                A cheerful girl<br>
+                                who likes having<br>
+                                fun with her<br>
+                                family and friends.
+                            </p>
+                        </div>
+
+                        <div class="character-cta">
+                            <a href="store.html" class="character-cta-btn">
+                                <img src="images/button_browse_store.png" alt="Browse Store">
+                                </button>
+                            </a>
+                            <button class="character-cta-btn">
+                                <img src="images/button_addtocart.png" alt="Add To Cart">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: CHARACTER IMAGE -->
+                    <div class="character-image-wrap">
+                        <img id="characterImage" src="images/character_freya.png" alt="Freya character"
+                            class="character-image character-transition">
+                    </div>
+                </div>
+            </section>
+
+            <section class="character-reel-panel">
+
+                <section class="character-reel-mobile">
+
+
+                    <!-- LEFT ARROW -->
+                    <button class="reel-arrow left" aria-label="Previous">
+                        <img src="images/arrow_left.png" alt="Previous">
+                    </button>
+
+
+                    <!-- SCROLL AREA -->
+                    <div class="reel-viewport">
+                        <div class="reel-track">
+
+                            <div class="reel-card active" data-image="images/character_freya.png"
+                                data-nameimg="images/name_freya.png"
+                                data-desc="A cheerful girl who likes having fun with her family and friends.">
+                                <img src="images/profile_freya.png" alt="Freya">
+                            </div>
+
+                            <div class="reel-card" data-image="images/character_teri.png"
+                                data-nameimg="images/name_teri.png"
+                                data-desc="A gentle rabbit who loves caring for everyone around her.">
+                                <img src="images/profile_teri.png" alt="Teri">
+                            </div>
+
+                            <div class="reel-card" data-image="images/character_frasier.png"
+                                data-nameimg="images/name_frasier.png"
+                                data-desc="A devoted father who loves making sweets and now works as a talented confectioner.">
+                                <img src="images/profile_frasier.png" alt="Frasier">
+                            </div>
+
+
+                            <div class="reel-card" data-image="images/character_creme.png"
+                                data-nameimg="images/name_creme.png"
+                                data-desc="The little sister, who loves bedtime stories and her father’s chocolate croissants.">
+                                <img src="images/profile_creme.png" alt="Crème">
+                            </div>
+
+
+                            <!-- extra characters (hidden until scrolled) -->
+                            <div class="reel-card" data-image="images/character_stella.png"
+                                data-nameimg="images/name_stella.png"
+                                data-desc="An older sister who lives in town and designs beautiful dresses.">
+                                <img src="images/profile_stella.png" alt="Stella">
+                            </div>
+
+
+                            <div class="reel-card" data-image="images/character_rhys.png"
+                                data-nameimg="images/name_rhys.png"
+                                data-desc="The family’s beloved grandfather and captain of the Seaside Cruiser, full of stories and adventure.">
+                                <img src="images/profile_rhys.png" alt="Rhys">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT ARROW -->
+                    <button class="reel-arrow right" aria-label="Next">
+                        <img src="images/arrow_right.png" alt="Next">
+                    </button>
+
+                </section>
+            </section>
+
+
+        </section>
+        <footer class="footer-mobile">
+
+            <!-- SOCIAL BAR -->
+            <div class="footer-social-mobile">
+                <a href="https://x.com/SylvanianUK" target="_blank">
+                    <img src="images/icon_twitter.png" class="social-mobile-icon" alt="X">
+                </a>
+
+                <a href="https://www.youtube.com/@CALICOCRITTERSOfficial" target="_blank">
+                    <img src="images/icon_youtube.png" class="social-mobile-icon" alt="YouTube">
+                </a>
+
+                <a href="https://page.line.me/173uzckl?openQrModal=true" target="_blank">
+                    <img src="images/icon_line.png" class="social-mobile-icon" alt="LINE">
+                </a>
+
+                <a href="https://www.instagram.com/calicocritter/" target="_blank">
+                    <img src="images/icon_instagram.png" class="social-mobile-icon" alt="Instagram">
+                </a>
+            </div>
+
+            <!-- SUPPORT SECTION -->
+            <div class="footer-support-mobile">
+                <a href="#" class="support-pill-mobile">Customer Support</a>
+
+
+                <div class="support-characters-mobile">
+                    <img src="images/footer_contact.png" class="support-char-mobile">
+                    <img src="images/footer_logo.png" class="support-logo-mobile">
+                    <img src="images/footer_shipping.png" class="support-char-mobile">
+                </div>
+            </div>
+
+            <!-- LINKS (stacked on mobile) -->
+            <div class="footer-links-mobile">
+                <a href="#">Cookie Settings</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Help Center</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <p class="footer-copy-mobile">© 1985 - 2025 EPOCH</p>
+        </footer>
+    </main>
+    <script>
+        const reelCards = document.querySelectorAll(".reel-card");
+
+        const heroImage = document.getElementById("characterImage");
+        const nameImage = document.getElementById("characterName");
+        const description = document.getElementById("characterDesc");
+
+        reelCards.forEach(card => {
+            card.addEventListener("click", () => {
+
+                // active state
+                reelCards.forEach(c => c.classList.remove("active"));
+                card.classList.add("active");
+
+                // start fade out
+                heroImage.classList.add("character-hidden");
+                nameImage.classList.add("character-hidden");
+                description.classList.add("character-hidden");
+
+                // wait for fade out, then swap content
+                setTimeout(() => {
+                    heroImage.src = card.dataset.image;
+                    nameImage.src = card.dataset.nameimg;
+                    description.textContent = card.dataset.desc;
+
+                    // fade back in
+                    heroImage.classList.remove("character-hidden");
+                    nameImage.classList.remove("character-hidden");
+                    description.classList.remove("character-hidden");
+                }, 180); // half the transition time feels best
+            });
+        });
+
+    </script>
+    </main>
+
+    <!-- END OF MOBILE CONTENT -->
+
+    <section class="character-desktop-bg">
+        <div class="character-desktop-overlay">
+
+            <section class="store-hero-desktop d-none d-md-block">
+
+                <!-- DESKTOP/TABLET NAVBAR (shows md and up) -->
+                <nav class="navbar custom-navbar desktop-nav d-none d-md-flex align-items-center">
+                    <div class="container-fluid">
+
+                        <!-- Logo on the left -->
+                        <a class="navbar-brand me-4" href="#">
+                            <img class="logo-desktop" src="images/logo.png" alt="Logo" />
+                        </a>
+
+                        <!-- Main links in the middle -->
+                        <ul class="desktop-menu mb-0">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="store.html">DOLLS & TOYS</a></li>
+                            <li><a href="characters_chocolaterabbit.html" class="active">CHARACTERS</a></li>
+                            <li><a href="#">MERCH</a></li>
+                            <li><a href="#">PICKUP</a></li>
+                        </ul>
+
+                        <!-- Spacer pushes actions to the right -->
+                        <div class="flex-grow-1"></div>
+
+                        <!-- Search + icons on the right -->
+                        <div class="desktop-actions d-flex align-items-center gap-2">
+                            <!-- Search bar -->
+                            <div class="search-wrapper me-2">
+                                <input type="text" class="form-control search-input" placeholder="Search" />
+                                <button class="search-icon-btn" type="button">
+                                    <svg width="45" height="45" viewBox="0 0 50 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M72.5164 72.5028C70.8264 74.2028 68.8864 73.7128 67.3764 72.1428C65.9631 70.6762 61.7797 66.4928 54.8264 59.5928C54.6967 59.4659 54.5936 59.3139 54.5232 59.1456C54.4528 58.9773 54.4165 58.7962 54.4164 58.6128V56.1928C54.4165 56.0351 54.3721 55.8805 54.2884 55.7468C54.2047 55.6131 54.0851 55.5057 53.9431 55.4368C53.8012 55.3679 53.6428 55.3404 53.486 55.3574C53.3292 55.3744 53.1803 55.4352 53.0564 55.5328C45.1264 61.8728 33.5764 59.8728 28.3864 51.0628C24.4164 44.3328 25.4964 36.3228 30.9064 30.9128C36.3164 25.5028 44.3264 24.4128 51.0564 28.3828C59.8664 33.5728 61.8764 45.1128 55.5364 53.0528C55.4388 53.1767 55.378 53.3256 55.361 53.4824C55.344 53.6392 55.3715 53.7976 55.4404 53.9396C55.5093 54.0815 55.6167 54.2011 55.7504 54.2848C55.8841 54.3685 56.0387 54.4129 56.1964 54.4128H58.6164C58.7998 54.4129 58.9809 54.4492 59.1492 54.5196C59.3175 54.59 59.4695 54.6931 59.5964 54.8228C66.5031 61.7695 70.6897 65.9495 72.1564 67.3628C73.7264 68.8728 74.2164 70.8028 72.5164 72.5028ZM54.4964 42.6328C54.4964 39.49 53.2479 36.4759 51.0256 34.2536C48.8033 32.0313 45.7892 30.7828 42.6464 30.7828C39.5036 30.7828 36.4895 32.0313 34.2672 34.2536C32.0449 36.4759 30.7964 39.49 30.7964 42.6328C30.7964 45.7756 32.0449 48.7897 34.2672 51.012C36.4895 53.2343 39.5036 54.4828 42.6464 54.4828C45.7892 54.4828 48.8033 53.2343 51.0256 51.012C53.2479 48.7897 54.4964 45.7756 54.4964 42.6328Z"
+                                            fill="#ED4F68" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- DESKTOP ICONS for Navbar -->
+
+                            <!-- DESKTOP Heart Icon -->
+                            <button class="btn btn-light rounded-circle" style="
+                            width: 40px;
+                            height: 40px;
+                            padding: 0;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            ">
+                                <svg width="24" height="24" viewBox="-2 -3 35 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0298 2.52609C16.1998 2.52609 16.1498 2.54753 16.2398 2.48322C21.1731 -1.13201 25.5764 -0.79978 29.4498 3.47991C32.9598 7.3595 32.6698 13.3718 30.2698 18.2266C27.7598 23.3065 21.9598 30.2191 16.0698 30.2298C10.1798 30.2405 4.35977 23.3494 1.82977 18.2695C-0.580233 13.4254 -0.890232 7.41309 2.60977 3.52278C6.46977 -0.771201 10.8731 -1.11772 15.8198 2.48322C15.9098 2.54753 15.8598 2.52609 16.0298 2.52609Z"
+                                        fill="#ED4F68" />
+                                </svg>
+                            </button>
+
+                            <!-- DESKTOP Cart Icon -->
+                            <button class="btn btn-light rounded-circle" type="button" style="
+                                width: 42px;
+                                height: 42px;
+                                padding: 0;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                ">
+                                <svg width="22" height="22" viewBox="-1 0 36 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="display: block">
+                                    <path
+                                        d="M17.8514 0C21.3247 0 23.8247 0.00999997 25.3514 0.03C25.8552 0.0364985 26.3462 0.188208 26.765 0.466807C27.1837 0.745407 27.5125 1.13898 27.7114 1.6L31.7514 10.95C31.808 11.0807 31.9016 11.192 32.0206 11.2702C32.1396 11.3484 32.279 11.39 32.4214 11.39H34.0114C34.2705 11.3898 34.5262 11.4495 34.7584 11.5645C34.9906 11.6795 35.1931 11.8467 35.35 12.053C35.5068 12.2592 35.6139 12.499 35.6627 12.7535C35.7115 13.008 35.7008 13.2703 35.6314 13.52L31.5514 28.34C31.3582 29.037 30.9533 29.6567 30.3925 30.1135C29.8318 30.5703 29.143 30.8417 28.4214 30.89C28.1947 30.9033 24.6681 30.91 17.8414 30.91C11.0081 30.9033 7.47806 30.8933 7.25139 30.88C6.53152 30.8297 5.84495 30.5574 5.2862 30.1008C4.72745 29.6441 4.324 29.0254 4.13139 28.33L0.0613897 13.51C-0.00802226 13.2603 -0.0187369 12.998 0.0300838 12.7435C0.0789045 12.489 0.185937 12.2492 0.342811 12.043C0.499684 11.8367 0.702146 11.6695 0.934362 11.5545C1.16658 11.4395 1.42225 11.3798 1.68139 11.38H3.27139C3.41382 11.38 3.55313 11.3384 3.67218 11.2602C3.79123 11.182 3.88481 11.0707 3.94139 10.94L7.99139 1.59C8.19032 1.12898 8.51903 0.7354 8.93782 0.4568C9.3566 0.1782 9.84756 0.0264933 10.3514 0.02C11.8781 0.00666665 14.3781 0 17.8514 0ZM7.49139 10.88C7.46834 10.9346 7.45913 10.994 7.46457 11.0531C7.47002 11.1121 7.48994 11.1688 7.52259 11.2183C7.55524 11.2678 7.59959 11.3084 7.65172 11.3366C7.70384 11.3648 7.76212 11.3797 7.82139 11.38H27.8714C27.9307 11.3797 27.9889 11.3648 28.0411 11.3366C28.0932 11.3084 28.1375 11.2678 28.1702 11.2183C28.2028 11.1688 28.2228 11.1121 28.2282 11.0531C28.2337 10.994 28.2244 10.9346 28.2014 10.88L24.9814 3.45C24.954 3.38504 24.9081 3.32957 24.8494 3.29046C24.7908 3.25135 24.7219 3.23033 24.6514 3.23H11.0614C10.9909 3.23033 10.922 3.25135 10.8634 3.29046C10.8047 3.32957 10.7588 3.38504 10.7314 3.45L7.49139 10.88ZM13.0168 17.8632C13.0197 17.6557 12.9817 17.4497 12.905 17.2569C12.8283 17.0642 12.7143 16.8884 12.5697 16.7396C12.425 16.5909 12.2525 16.4721 12.0619 16.39C11.8713 16.3079 11.6665 16.2642 11.459 16.2613L11.339 16.2596C11.1315 16.2567 10.9255 16.2947 10.7327 16.3714C10.5399 16.4481 10.3642 16.5621 10.2154 16.7067C10.0667 16.8514 9.94786 17.0239 9.86579 17.2145C9.78372 17.4051 9.73999 17.6099 9.73709 17.8174L9.64599 24.3368C9.64309 24.5443 9.68109 24.7503 9.75781 24.9431C9.83453 25.1358 9.94847 25.3116 10.0931 25.4604C10.2378 25.6091 10.4103 25.7279 10.6009 25.81C10.7915 25.8921 10.9963 25.9358 11.2038 25.9387L11.3238 25.9404C11.5313 25.9433 11.7373 25.9053 11.9301 25.8286C12.1228 25.7519 12.2986 25.6379 12.4474 25.4933C12.5961 25.3486 12.7149 25.1761 12.797 24.9855C12.8791 24.7949 12.9228 24.5901 12.9257 24.3826L13.0168 17.8632ZM19.4759 17.8468C19.4801 17.441 19.323 17.0502 19.0391 16.7603C18.7552 16.4704 18.3677 16.3051 17.962 16.3009L17.842 16.2996C17.6411 16.2975 17.4417 16.335 17.2553 16.4099C17.0688 16.4848 16.899 16.5958 16.7554 16.7364C16.6119 16.8769 16.4974 17.0444 16.4186 17.2292C16.3398 17.414 16.2981 17.6126 16.296 17.8135L16.2269 24.4132C16.2226 24.819 16.3798 25.2098 16.6637 25.4997C16.9476 25.7896 17.335 25.9549 17.7408 25.9591L17.8608 25.9604C18.0617 25.9625 18.2611 25.925 18.4475 25.8501C18.6339 25.7752 18.8038 25.6642 18.9473 25.5236C19.0909 25.3831 19.2054 25.2156 19.2842 25.0308C19.363 24.846 19.4047 24.6474 19.4068 24.4465L19.4759 17.8468ZM25.9685 17.8387C25.9671 17.6338 25.9253 17.4313 25.8456 17.2425C25.7659 17.0538 25.6498 16.8826 25.5039 16.7388C25.358 16.5949 25.1852 16.4812 24.9954 16.4042C24.8056 16.3271 24.6025 16.2882 24.3976 16.2896L24.2576 16.2906C24.0527 16.292 23.8501 16.3338 23.6614 16.4135C23.4727 16.4932 23.3015 16.6093 23.1577 16.7552C23.0138 16.9011 22.9001 17.0739 22.8231 17.2637C22.746 17.4535 22.7071 17.6566 22.7085 17.8615L22.7543 24.4213C22.7557 24.6262 22.7975 24.8287 22.8772 25.0175C22.9569 25.2062 23.073 25.3774 23.2189 25.5212C23.3648 25.6651 23.5375 25.7788 23.7274 25.8558C23.9172 25.9329 24.1203 25.9718 24.3252 25.9704L24.4652 25.9694C24.6701 25.968 24.8726 25.9262 25.0614 25.8465C25.2501 25.7668 25.4212 25.6507 25.5651 25.5048C25.7089 25.3589 25.8226 25.1861 25.8997 24.9963C25.9768 24.8065 26.0157 24.6034 26.0143 24.3985L25.9685 17.8387Z"
+                                        fill="#ED4F68" />
+                                </svg>
+                            </button>
+
+                            <!-- DESKTOP BUNNY Icon -->
+                            <button class="btn btn-light rounded-circle" type="button" style="
+                                width: 40px;
+                                height: 40px;
+                                padding: 0;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                ">
+                                <svg width="25" height="25" viewBox="0 0 30 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="display: block">
+                                    <path
+                                        d="M14.7351 14.0747C15.2817 14.0747 16.0351 14.1247 16.9951 14.2247C17.0831 14.2344 17.1723 14.2265 17.2573 14.2015C17.3423 14.1765 17.4215 14.1349 17.4903 14.0791C17.5591 14.0233 17.6162 13.9544 17.6582 13.8764C17.7002 13.7984 17.7263 13.7128 17.7351 13.6247C18.1951 9.50467 21.2151 1.85468 25.6551 0.154676C26.2266 -0.064083 26.8616 -0.0482595 27.4229 0.198728C27.9843 0.445715 28.4269 0.904037 28.6551 1.47468C31.1151 7.53468 27.6451 14.3347 23.7751 19.2447C23.6149 19.4457 23.526 19.6942 23.5224 19.9513C23.5187 20.2083 23.6006 20.4592 23.7551 20.6647C26.3951 24.1947 27.3751 30.6147 22.7351 32.9947C20.6751 34.048 18.4684 34.9413 16.1151 35.6747C16.0545 35.693 15.9908 35.699 15.928 35.6921C15.8652 35.6852 15.8047 35.6656 15.7503 35.6347C15.6958 35.6037 15.6486 35.5619 15.6116 35.512C15.5745 35.4621 15.5485 35.4052 15.5351 35.3447C15.1084 33.4313 15.4384 32.058 16.5251 31.2247C16.6298 31.1444 16.7131 31.0395 16.7675 30.9193C16.8219 30.799 16.8457 30.6672 16.8368 30.5355C16.8279 30.4039 16.7866 30.2764 16.7165 30.1646C16.6464 30.0528 16.5497 29.9601 16.4351 29.8947C15.9951 29.6413 15.4284 29.5147 14.7351 29.5147C14.0417 29.5147 13.4751 29.6413 13.0351 29.8947C12.9204 29.9601 12.8238 30.0528 12.7537 30.1646C12.6836 30.2764 12.6422 30.4039 12.6333 30.5355C12.6244 30.6672 12.6482 30.799 12.7026 30.9193C12.757 31.0395 12.8403 31.1444 12.9451 31.2247C14.0317 32.058 14.3584 33.4313 13.9251 35.3447C13.9116 35.4052 13.8856 35.4621 13.8486 35.512C13.8115 35.5619 13.7643 35.6037 13.7099 35.6347C13.6554 35.6656 13.5949 35.6852 13.5321 35.6921C13.4694 35.699 13.4057 35.693 13.3451 35.6747C10.9984 34.9413 8.79506 34.048 6.73506 32.9947C2.09507 30.6047 3.07506 24.1947 5.71506 20.6647C5.86953 20.4592 5.95138 20.2083 5.94776 19.9513C5.94414 19.6942 5.85526 19.4457 5.69507 19.2447C1.82507 14.3247 -1.63493 7.52468 0.825065 1.46468C1.05518 0.895854 1.49856 0.439812 2.05969 0.194785C2.62082 -0.0502416 3.2548 -0.0646456 3.82507 0.154676C8.26507 1.85468 11.2851 9.50467 11.7351 13.6247C11.7438 13.7128 11.7699 13.7984 11.8119 13.8764C11.8539 13.9544 11.911 14.0233 11.9798 14.0791C12.0487 14.1349 12.1279 14.1765 12.2129 14.2015C12.2979 14.2265 12.387 14.2344 12.4751 14.2247C13.4351 14.1247 14.1884 14.0747 14.7351 14.0747ZM11.8951 25.9247C11.8951 25.5613 11.7507 25.2129 11.4938 24.9559C11.2369 24.699 10.8884 24.5547 10.5251 24.5547C10.1617 24.5547 9.81325 24.699 9.55633 24.9559C9.29941 25.2129 9.15507 25.5613 9.15507 25.9247C9.15507 26.288 9.29941 26.6365 9.55633 26.8934C9.81325 27.1503 10.1617 27.2947 10.5251 27.2947C10.8884 27.2947 11.2369 27.1503 11.4938 26.8934C11.7507 26.6365 11.8951 26.288 11.8951 25.9247ZM20.3451 25.9247C20.3451 25.5587 20.1997 25.2077 19.9409 24.9489C19.6821 24.6901 19.3311 24.5447 18.9651 24.5447C18.5991 24.5447 18.2481 24.6901 17.9893 24.9489C17.7305 25.2077 17.5851 25.5587 17.5851 25.9247C17.5851 26.2907 17.7305 26.6417 17.9893 26.9005C18.2481 27.1593 18.5991 27.3047 18.9651 27.3047C19.3311 27.3047 19.6821 27.1593 19.9409 26.9005C20.1997 26.6417 20.3451 26.2907 20.3451 25.9247Z"
+                                        fill="#ED4F68" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </section>
+
+</body>
+</html>

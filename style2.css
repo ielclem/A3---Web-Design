@@ -1,0 +1,2400 @@
+/* Base body – no background image, just a fallback colour */
+body {
+  background-color: #f7d8b8; /* or any neutral base */
+}
+
+/* FIRST MOBILE SCREEN: kitchen */
+.home-mobile-first {
+  background-image: url("images/background_home_mobile1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  /* full viewport height minus navbar */
+  min-height: calc(100vh - 64px); /* tweak 64px if your nav height differs */
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* SECOND MOBILE SCREEN: meadow */
+.home-mobile-second {
+  background-image: url("images/background_home2_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  min-height: 100vh;
+  padding: 2rem 0 3rem;
+}
+
+#charactersCarousel .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Position controls */
+.characters-carousel-control {
+  width: 16%; /* how wide the tap area is */
+}
+
+/* Remove Bootstrap's default icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none !important;
+}
+
+/* Make the whole button area tappable */
+.characters-carousel-control {
+  width: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The arrow images */
+.carousel-arrow-img {
+  width: 45px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease;
+}
+
+.carousel-arrow-img:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.characters-carousel-control:focus,
+.characters-carousel-control:hover .carousel-arrow {
+  outline: none;
+  transform: scale(1.05);
+}
+/* ----- Bigger Characters Header Section ----- */
+.characters-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px; /* more spacing for larger elements */
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.characters-header img {
+  max-width: 30vw;
+  height: auto;
+  display: block;
+}
+
+.home-mobile-second {
+  overflow-x: hidden;
+}
+
+.families-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.families-header h2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- Larger 3-column character grid ---- */
+.families-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* bigger spacing */
+  max-width: 600px; /* wider grid = larger cards */
+  margin: 0 auto 2rem auto;
+  padding: 0 0.5rem;
+}
+
+.family-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Larger character images */
+.family-card img {
+  display: block;
+  width: 100%; /* fill the card's width */
+  height: auto; /* keep the full image, no cropping */
+}
+
+.family-link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Make the family-card behave like an image button */
+.family-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+/* Clean, responsive image */
+.family-card {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover Glow Effect */
+.family-card:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+}
+.meet-families-btn-container {
+  margin-top: 2.9rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.meet-families-link {
+  text-decoration: none;
+}
+
+.meet-families-link img {
+  width: 500px; /* tweak size to taste */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.35));
+  transition: transform 0.2s ease, filter 0.25s ease;
+}
+
+.meet-families-link img:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.9));
+}
+.characters-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 42px; /* larger title */
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Bigger flower PNGs */
+.char-header-img {
+  width: 140px; /* was 80px */
+  height: auto;
+  object-fit: contain;
+}
+
+.second-section-inner {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* THIRD MOBILE SCREEN */
+.home-mobile-third {
+  background-image: url("images/background_home3_mobile.png"); /* swap to your actual file name */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  min-height: 100vh; /* full-screen feel */
+  padding: 2rem 0 3rem;
+}
+
+/* inner layout placeholder */
+.third-mobile-inner {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Play Center Header */
+.playcenter-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px; /* spacing similar to your mockup */
+  padding-top: 20px;
+  padding-bottom: 25px;
+    white-space: nowrap;           /* keeps it on ONE line */
+}
+
+.playcenter-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.playcenter-tiles-wrapper {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  width: 100%;
+}
+
+/* Each tile is a full-width button */
+.playcenter-tile {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.28rem; /* spacing between tiles */
+  justify-items: center;
+}
+
+/* Tile image fills container */
+.playcenter-tile img {
+  width: 90%;
+  height: auto;
+  display: block;
+  transition: transform 0.18s ease, filter 0.22s ease;
+}
+.playcenter-tile img:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.9));
+}
+
+.logo {
+  margin-top: 6px;
+  height: 50px;
+  width: 190px;
+}
+
+#welcome {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portrait-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+}
+
+.portrait {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+.custom-navbar {
+  background-color: #ed4f68;
+}
+
+.play-container {
+  padding-left: 10px;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.characters-container {
+  padding-left: 10px;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-now-container {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-image {
+  position: relative;
+}
+
+.btn-image img {
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.8));
+  transition: filter 0.3s ease;
+}
+
+.btn-image img:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+/* --- DESKTOP NAVBAR --- */
+.desktop-nav {
+  /* same pink background as mobile */
+  background-color: #ed4f68;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Base desktop menu links (keep if you already have similar) */
+.desktop-menu li a {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 6px 18px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+/* Subtle ACTIVE state */
+.desktop-menu li a.active {
+  border-radius: 999px; /* fully rounded */
+  color: #ffffff;
+}
+
+/* Smaller white rounded caps top & bottom */
+.desktop-menu li a.active::before,
+.desktop-menu li a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%; /* a bit inset from the sides */
+  height: 3px; /* smaller + subtler */
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+/* top cap */
+.desktop-menu li a.active::before {
+  top: -5px; /* just peeks above */
+}
+
+/* bottom cap */
+.desktop-menu li a.active::after {
+  bottom: -5px; /* just peeks below */
+}
+
+/* Desktop logo (you can tweak size separate from mobile) */
+.logo-desktop {
+  height: 40px;
+  width: auto;
+}
+
+/* Center menu links */
+.desktop-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito", sans-serif;
+  transition: all 0.25s ease;
+}
+
+.desktop-menu a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.desktop-menu a:hover {
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+}
+
+/* Search bar styling */
+.search-wrapper {
+  position: relative;
+  min-width: 220px; /* adjust if needed */
+}
+
+.search-input {
+  border-radius: 999px;
+  padding-right: 2.25rem;
+  border: none;
+}
+
+.search-icon-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Round white icon buttons on the right */
+.desktop-icon-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.home-mobile-fourth {
+  background-image: url("images/background_home4_mobile.png");
+  background-size: cover;            /* full bleed */
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  min-height: 85vh;                 /* fill the whole phone screen */
+  padding: 2rem 0 0.9rem;              /* similar spacing to your other screens */
+}
+
+.fourth-mobile-inner {
+  max-width: 480px;                  /* same inner width consistency */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ============================= */
+/*  BLOG & NEWS MOBILE HEADER    */
+/* ============================= */
+
+.blognews-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;                       /* Same spacing as other screens */
+    padding-top: 20px;
+    padding-bottom: 12px;
+    white-space: nowrap; /* prevents wrapping */
+
+}
+
+.blognews-title {
+    font-family: "Fredoka", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+
+.article-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 2rem;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.45));
+}
+
+.article-frame {
+    width: 120%;
+    display: block;
+    position: relative;
+    left: -10%;   /* pulls the frame left to recenter */
+}
+
+.article-inner {
+    position: absolute;
+    top: 0;
+    left: -5%;        /* shift left to visually center inside the wider frame */
+    width: 110%;      /* expands content without overflowing the rounded ends */
+    height: 100%;
+    padding: 18px 20px;
+
+    display: flex;
+    gap: 14px;
+}
+
+.article-meta-row {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    gap: 12px;
+}
+
+.article-thumb {
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    width: 95px;
+    z-index: 3;
+}
+
+.article-content {
+flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 100px; /* adjust until it aligns perfectly */
+}
+
+.article-title {
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.3;
+    margin: 0 0 8px;
+}
+
+.article-badge {
+    width: 100px;
+    height: auto;
+    margin-bottom: 6px;
+    margin-top: -4px;   /* raise upward slightly */
+}
+
+.article-date {
+    margin-left: auto;
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.article-divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;   /* space above and below divider */
+}
+
+.article-divider img {
+    width: 250px;       /* adjust to match your mockup */
+    height: auto;
+    opacity: 0.9;       /* optional, if you want a soft look */
+}
+
+.viewmore-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;   /* spacing above and below */
+    width: 100%;
+    margin-top: -20px
+}
+
+.viewmore-btn img {           /* adjust if you want it larger or smaller */
+    height: auto;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+    width: 80vw;
+}
+
+.viewmore-btn {
+    display: inline-block;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.viewmore-btn:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(255, 166, 166, 0.85));
+}
+
+/* ===== SOCIAL BAR ===== */
+.footer-social-mobile {
+    background: #e85b6c;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.social-mobile-icon {
+    width: 28px;
+    height: auto;
+    opacity: 0.9;
+}
+
+
+/* ===== SUPPORT SECTION ===== */
+.footer-support-mobile {
+    background: #f8f1e4;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.support-pill-mobile {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 700;                    /* bold */
+  font-size: 1.25rem;                  /* larger size */
+  background-color: #fddfb4;           /* soft peach */
+  color: #6b5246;                      /* warm brown text */
+      text-decoration: none;
+  
+  padding: 15px 40px;                  /* taller + wider */
+  border-radius: 14px;                 /* smooth corners */
+  display: inline-block;
+  margin: 0 auto;                      /* center horizontally */
+  
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);  /* subtle shadow */
+  text-align: center;
+  margin-bottom: 20px;
+    transition: transform .2s ease;
+
+}
+
+.support-pill-mobile:hover {
+      transform: scale(1.12);
+    opacity: 0.85;
+}
+
+
+.support-characters-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.support-char-mobile {
+    width: 85px;
+}
+
+.support-logo-mobile {
+    width: 150px;
+}
+
+
+/* ===== NAV LINKS (STACKED) ===== */
+.footer-links-mobile {
+    background: #f8f1e4;
+    padding: 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-links-mobile a {
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #6b4d35;
+    text-decoration: none;
+}
+
+
+/* ===== COPYRIGHT ===== */
+.footer-copy-mobile {
+    background: #f8f1e4;
+    margin: 0;
+    padding-bottom: 25px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 13px;
+    color: #6b4d35;
+    text-align: center;
+}
+
+.footer-links-mobile a:hover {
+  text-decoration: underline;   /* underline on hover */
+  text-decoration-thickness: 2px; /* thicker underline like Calico Critters UI */
+}
+
+.store-mobile-hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.store-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container spacing */
+.store-mobile-header {
+    padding: 20px 18px 10px;
+}
+
+/* Breadcrumbs */
+.store-breadcrumbs {
+    font-family: "Gabarito", sans-serif;
+    font-size: 12px;
+    color: #C15C6A;
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.store-breadcrumbs a {
+    text-decoration: none;
+    color: #C15C6A;
+}
+
+.store-breadcrumbs a:hover{
+  text-decoration: underline;
+}
+
+/* Title + Results Row */
+.store-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Store Title */
+.store-title {
+    font-family: "Fredoka", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #FF6D84;
+    margin: 0;
+}
+
+/* Results Count */
+.store-results {
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #7A7A7A;
+}
+
+.store-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 16px;
+    margin: 10px 0 20px;
+}
+
+/* SHARED BUTTON STYLE */
+.store-filter-btn,
+.store-sort-btn {
+    flex: 1;
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gabarito";
+    font-size: 16px;
+    color: #555;
+}
+
+/* FILTER ICON */
+.store-filter-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+/* SORT ARROWS */
+.sort-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.sort-arrows img {
+    width: 14px;
+    opacity: 0.7;
+}
+
+.store-grid-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0 12px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 12px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+}
+
+.product-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+}
+
+.product-name {
+    font-size: 13px;
+    color: #444;
+    font-family: "Gabarito", sans-serif;
+    margin: 10px 0 4px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF3366;
+    margin-bottom: 10px;
+    font-family: "Gabarito", sans-serif;
+}
+
+.add-cart-btn {
+    width: 100%;
+    background: #FF4C73;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;      /* spacing between text + icon */
+}
+
+.add-cart-btn img {
+    width: 20px;      /* fix the icon size */
+    height: 20px;     /* ensures proper scaling */
+    object-fit: contain;
+    display: block;   /* remove inline spacing */
+}
+
+.product-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: block;
+
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 0 8px rgba(255, 105, 130, 0.35);
+
+}
+
+.show-more-btn {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 28px auto 40px;   /* perfect spacing */
+    padding: 14px 0;
+    border-radius: 20px;
+
+    border: 2px solid #EC576B;
+    background: transparent;
+    color: #EC576B;
+
+    font-family: "Gabarito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.show-more-btn:hover {
+    background: #EC576B;
+    color: #fff;
+}
+
+.character-background {
+    width: 100%;
+    min-height: 100vh;             /* full mobile height */
+    background-image: url("images/background_characters_mobile.png"); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+.character-hero-mobile {
+  min-height: 100vh;
+  background: url("images/freya_bg_mobile.jpg") no-repeat center top;
+  background-size: cover;
+  padding: 90px 0 40px;
+  overflow: hidden; /* allows image cropping */
+}
+
+/* Two-column layout */
+.character-hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+}
+
+/* shared transition state */
+.character-transition {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* hidden state during swap */
+.character-hidden {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.character-info-panel {
+  width: 52%;
+  max-width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 🔑 THIS is the big fix */
+  gap: 14px;
+
+  z-index: 2;
+}
+
+.character-image-wrap {
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;     /* 🔑 align all characters to the “floor” */
+  overflow: visible;
+  margin-right: 10%;
+}
+
+.character-image {
+  width: auto;
+  height: 80vh;              /* 🔑 consistent visual height */
+  max-height: 520px;         /* keeps it sane on tall phones */
+  transform: translateX(20%);
+  object-fit: contain;
+}
+
+/* Name */
+.character-name-img {
+  width: 220px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;            /* 🔑 centers every name consistently */
+}
+
+
+/* Divider */
+.character-divider-img {
+  width: 180px;
+}
+
+/* Description */
+.character-desc {
+  width: 100%;
+  max-width: 240px;
+  padding: 14px 16px;
+  border-radius: 16px;
+}
+
+.character-desc p {
+  margin: 0;
+  font-family: "Gabarito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Buttons */
+.character-cta {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.character-cta-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.character-cta-btn img {
+  width: 100%;
+  max-width: 240px;
+  display: block;
+  transition: 
+    transform 0.25s ease,
+    filter 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover / focus glow */
+.character-cta-btn:hover img,
+.character-cta-btn:focus-visible img {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 8px rgba(255, 196, 206, 0.65))
+          drop-shadow(0 0 14px rgba(255, 209, 219, 0.45));
+}
+
+.character-reel-mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+/* arrows */
+.reel-arrow {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  padding: 0 8px;
+  z-index: 2;
+}
+
+/* viewport masks overflow */
+.reel-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* horizontal strip */
+.reel-track {
+  display: flex;
+  gap: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* each card */
+.reel-card {
+  flex: 0 0 calc(25% - 9px); /* 4 visible */
+  text-align: center;
+    transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.reel-card:hover,
+.reel-card:focus-visible {
+  transform: translateY(-4px);
+  filter:
+    drop-shadow(0 0 6px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 14px rgba(255, 200, 215, 0.45));
+}
+
+.reel-card img {
+  width: 100%;
+}
+
+
+.reel-arrow {
+  background: none;
+  border: none;
+  padding: 0 6px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.reel-arrow img {
+  width: 28px;          /* adjust to match your mockup */
+  height: auto;
+  display: block;
+}
+
+/* optional subtle hover feedback */
+.reel-arrow:hover img {
+  filter: drop-shadow(0 0 6px rgba(255, 120, 150, 0.6));
+}
+
+.character-reel-panel {
+  position: relative;
+  margin-top: -160px;          /* pulls it upward */
+
+  background-image: url("images/background_character_reel.png"); /* ← YOUR ASSET */
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* stretches like mockup */
+  background-position: center;
+
+  z-index: 1;
+}
+
+/* keep reel content above the panel */
+.character-reel-mobile {
+  position: relative;
+  z-index: 2;
+  padding: 0px;
+}
+
+/* DROP DOWN MENU FAMILIES */
+.family-dropdown {
+  margin: 16px 16px 0;
+  position: relative;
+}
+
+/* TOGGLE BAR */
+.family-toggle {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  border: none;
+  border-radius: 16px;
+  padding: 14px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.family-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.family-icon {
+  width: 28px;
+}
+
+.family-arrow {
+  width: 18px;
+  transition: transform 0.25s ease;
+}
+
+.breadcrumb-bar {
+  width: 100%;
+  padding: 10px 16px;
+  background: transparent;
+  font-family: "Gabarito", sans-serif;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.breadcrumb-list a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.breadcrumb-list a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.breadcrumb-list .separator {
+  opacity: 0.6;
+}
+
+.breadcrumb-list .current {
+  opacity: 1;
+  white-space: nowrap;
+}
+
+/* ====================================================== */
+/*  DESKTOP ASSETS SEPARATION                              */
+/* ====================================================== */
+@media (min-width: 768px) {
+  body {
+    background-image: none; /* removes mobile background on desktop */
+    background-color: #ffffff;
+  }
+
+  .home-desktop {
+    background-image: url("images/background_home_desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: calc(100vh - 64px); /* adjust if navbar height differs */
+    padding-top: 2rem;
+  }
+}
+
+/* ====================================================== */
+/*  DESKTOP LEFT COLUMN: PORTRAIT + WELCOME               */
+/* ====================================================== */
+
+/* Container holding portrait + welcome text */
+.desktop-left-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  /* Move the entire group */
+  transform: translate(60px, -400px); /* 👉 tweak these to taste */
+  gap: 1.5rem; /* spacing between portrait + text */
+}
+
+/* Portrait image */
+.desktop-portrait {
+  width: 110px;
+  height: auto;
+
+  /* Soft subtle shadow */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+/* Welcome text */
+.desktop-welcome-text {
+  margin-top: 5%;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: white;
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ====================================================== */
+/*  DESKTOP MIDDLE COLUMN: HERO BUNNY + SHOP NOW          */
+/* ====================================================== */
+
+/* CENTER COLUMN: hero bunny + overlapping Shop button */
+/* Overall desktop row alignment */
+.desktop-main-row {
+  align-items: flex-end; /* all three columns line up toward bottom */
+}
+
+/* CENTER COLUMN: hero bunny + overlapping Shop button */
+.desktop-hero-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; /* bunny sits near bottom of its column */
+  justify-content: center; /* centered horizontally */
+  padding-bottom: 0.25rem; /* room for overlapping button */
+}
+
+.desktop-hero-img {
+  margin-top: 7%;
+  max-height: 740px; /* tweak to taste */
+  width: auto;
+}
+
+.desktop-hero-img:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+}
+
+.desktop-shop-btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-52%, -80%); /* 40% controls how far the button dips */
+}
+
+.desktop-shop-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.desktop-shop-btn img:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.desktop-shop-btn img {
+  width: 1000px; /* adjust if your button image is wider/narrower */
+  max-width: 100%;
+}
+
+/* Right column layout */
+.desktop-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  transform: translate(-50px, -250px); /* move upward more */
+}
+
+/* Image buttons */
+.desktop-image-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.desktop-image-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hover — magical glow + lift */
+.desktop-image-btn:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.8));
+}
+
+/* SHOP NOW BUTTON — add easing + hover animation */
+.desktop-shop-btn img {
+  width: 800px;
+  max-width: 100%;
+  display: block;
+  transition: transform 0.2s ease, filter 0.3s ease;
+
+  /* soft idle glow */
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+
+.desktop-shop-btn img:hover {
+  transform: scale(1.03); /* gentle lift */
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.9)); /* bright glow */
+}
+
+/* HERO BUNNY — Idle floating animation + glow + hover lift */
+.desktop-hero-img {
+  width: auto;
+  transition: transform 0.2s ease, filter 0.3s ease;
+
+  /* Idle glow */
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35));
+
+  /* Idle floating animation */
+  animation: bunnyFloat 4.5s ease-in-out infinite;
+}
+
+.desktop-hero-img:hover {
+  transform: scale(1.03); /* hover lift */
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+}
+
+/* Keyframes for idle floating */
+@keyframes bunnyFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  } /* gentle upward float */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.desktop-second-screen {
+  background-image: url("images/background_home2_desktop.png"); /* change to your actual filename */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto; 
+}
+@media (max-width: 1600px) {
+    .desktop-second-screen {
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+/* hide page scrollbar */
+html {
+  scrollbar-width: none;
+} /* Firefox */
+body {
+  -ms-overflow-style: none;
+} /* IE and Edge */
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-button {
+  display: none;
+} /* Chrome */
+/* end hide page scrollbar */
+
+.desktop-characters-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* spacing between flowers + title */
+  padding-top: 60px; /* space from top of background */
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.desktop-header-flower {
+  width: 220px; /* larger than mobile */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+}
+
+.desktop-characters-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 3.8rem; /* around 52px */
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.desktop-characters-carousel-wrapper {
+  max-width: 790px;
+  margin: 0 auto 40px auto;
+  /* no side padding – lets arrows hug the card */
+  position: relative;
+}
+
+/* Card shape / glow stays the same */
+.desktop-carousel-inner {
+  border-radius: 30px;
+}
+
+/* Controls now stretch the height of the card,
+     so arrow is vertically centered INSIDE it */
+.desktop-carousel-control {
+  width: 60px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center; /* centers arrow vertically */
+  justify-content: center;
+  top: 0; /* no 50% transform */
+  transform: none;
+}
+
+.carousel-control-prev.desktop-carousel-control {
+  left: -12%; /* sits at inside-left edge of card */
+}
+
+.carousel-control-next.desktop-carousel-control {
+  right: -12%; /* sits at inside-right edge of card */
+}
+
+.desktop-carousel-arrow {
+  width: 70px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.desktop-carousel-control:hover .desktop-carousel-arrow {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.95));
+}
+
+.desktop-families-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.desktop-families-title {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+  margin-bottom: 24px;
+}
+
+/* ============= CARDS ===========*/
+
+/* hide the native scrollbar */
+.families-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.families-scroll-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.families-scroll-row {
+  display: inline-flex;
+  gap: 18px;
+  padding: 0px 6px;
+  scroll-snap-type: x mandatory;
+}
+
+.family-card-lg {
+  position: relative;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+
+  min-width: 180px; /* forces 4-ish cards in view */
+  max-width: 200px;
+  scroll-snap-align: start;
+  margin-bottom: 2%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.family-card-lg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible !important;
+}
+
+.family-card-lg:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 px rgba(255, 255, 255, 1));
+}
+
+.families-scroll-wrapper {
+  /* viewport */
+  max-width: 790px;
+  margin: 0 auto 12px auto;
+
+  /* only vertical padding so glow has room */
+  padding: 25px 0 10px;
+
+  /* IMPORTANT: axis-specific overflow */
+  overflow-x: auto; /* hide extra cards left/right but allow scrolling */
+  overflow-y: visible; /* let glow show above/below */
+
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  /* keep scrollbar hidden if you like */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.families-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* fake progress bar */
+.families-scroll-track {
+  width: 100%;
+  max-width: 790px; /* 👈 match the wrapper width */
+  margin: 0 auto 6px auto;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+/* (rest of the families CSS stays the same) */
+
+.families-scroll-thumb {
+  height: 100%;
+  width: 25%; /* JS will update */
+  border-radius: inherit;
+  background: #ff588d;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35) inset;
+  transform: translateX(0%);
+  transition: transform 0.1s linear;
+}
+
+/* --- FAMILIES: remove any borders/outlines/shadows --- */
+.families-scroll-row .family-card-lg,
+.families-scroll-row .family-card-lg img {
+  border: none !important;
+}
+.families-scroll-row {
+  display: flex; /* ⬅️ flex instead of inline-flex */
+  flex-wrap: nowrap; /* ⬅️ keep in one row */
+  gap: 18px;
+  padding: 0 6px;
+  scroll-snap-type: x mandatory;
+}
+
+.families-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.families-scroll-thumb {
+  cursor: grab;
+}
+
+.families-scroll-thumb.dragging {
+  cursor: grabbing;
+}
+
+.home-desktop-playcenter {
+  background-image: url("images/background_home3_desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  width: 100%;
+  min-height: 100vh; /* or shorter if you prefer */
+  padding: 4rem 0; /* space around content later */
+}
+
+.playcenter-desktop-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 2.5rem;
+}
+
+.playcenter-desktop-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+    white-space: nowrap; /* prevents wrapping */
+}
+
+/* Overall layout */
+.playcenter-desktop-inner {
+  max-width: 1500px;       /* wider layout */
+  width: 95vw;             /* stretch across the screen */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;               /* slightly more space between columns */
+  padding: 40px 0;         /* reduced vertical padding */
+}
+
+/* LEFT COLUMN — big characters */
+.playcenter-big-img {
+  padding-right: 15%;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+  transition: transform 0.2s ease, filter 0.3s ease;
+
+  /* Idle glow */
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35));
+
+  /* Idle floating animation */
+  animation: bunnyFloat 4.5s ease-in-out infinite;
+}
+
+.playcenter-big-img:hover {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+}
+
+/* RIGHT COLUMN — general tile styling */
+.playcenter-tile-desktop {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.25s ease;
+}
+
+.playcenter-tile-desktop img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+  transition: inherit;
+}
+
+/* hover glow */
+.playcenter-tile-desktop:hover img {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 18px rgba(255,255,255,0.9));
+}
+
+/* FULL-WIDTH BUTTONS */
+.playcenter-tile-desktop.wide {
+  margin-bottom: 22px;
+}
+
+/* ROW OF TWO BUTTONS */
+.playcenter-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+/* HALF-WIDTH BUTTONS */
+.playcenter-tile-desktop.half {
+  width: 100%;
+}
+
+.home-desktop-blognews {
+  background-image: url("images/background_home4_desktop.png"); /* change to your file */
+  background-size: cover;        /* fills horizontally, crops if needed */
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  min-height: 100vh;             /* full-screen presence */
+  padding: 80px 0 120px;         /* top/bottom breathing room */
+}
+
+/* ===============================
+   DESKTOP BLOG & NEWS HEADER
+================================ */
+.blognews-desktop-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;                      /* wider spacing for desktop */
+  margin-bottom: 1rem;
+}
+
+.blognews-desktop-title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 64px;               /* slightly bigger than Play Center */
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+  white-space: nowrap;           /* keeps it on ONE line */
+}
+
+/* Outer wrapper */
+.desktop-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.blog-board {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-board-inner {
+    position: absolute;
+    top: 130px;        /* moves inner content downward into the board */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 100%;
+    max-width: 1180px;
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 40px;
+}
+
+.blog-board-frame {
+    width: 100%;
+    display: block;
+}
+
+.blog-board {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-board-img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.blog-board-inner {
+    position: absolute;
+    top: 120px;                 /* moves content downward inside the frame */
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.featured-wrapper {
+    position: relative;
+    margin-top: -100px;    /* pulls the featured card upward to overlap the board */
+    margin-left: 40px;
+    z-index: 5;
+}
+
+.featured-article {
+    position: relative;
+    width: 360px;          /* FIXED WIDTH — matches your mockup */
+      transition: transform 0.2s ease, filter 0.25s ease;
+
+}
+
+.featured-frame {
+    width: 100%;
+    display: block;
+}
+
+.featured-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 22px 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-article:hover{
+      transform: scale(1.02);
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.75));
+}
+
+.featured-thumb {
+    width: 85%;
+    margin: 12px 0;
+}
+
+.featured-badge {
+  margin-top: 30px;
+    width: 130px;
+}
+
+.featured-date {
+    margin: 6px 0;
+    font-family: "Fredoka";
+    font-size: 20px;
+    color: #fff;
+}
+
+.featured-divider {
+    width: 160px;
+    margin: 10px 0;
+}
+
+.featured-text {
+    font-family: "Fredoka";
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4;
+    padding: 0 15px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.article-card-desktop {
+    position: relative;
+    width: 100%;
+    max-width: 780px;   /* fits nicely inside the right column */
+    margin-left: auto;  /* aligns to the right cleanly */
+    transition: transform 0.2s ease, filter 0.25s ease;
+}
+
+.article-card-desktop:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.75));
+}
+
+.article-frame-desktop {
+  padding-top: 10px;
+    width: 560px;
+    height: auto;
+    pointer-events: none;
+}
+
+.article-inner-desktop {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 20px;
+    gap: 10px;
+}
+
+.article-thumb-desktop {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 7px;
+    margin-left: 5%;
+}
+
+.article-body-desktop {
+    display: flex;
+    flex-direction: column;   /* stack title on top */
+    width: 100%;
+    margin-top: -6px; 
+}
+
+.article-title-desktop {
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.35;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-bottom: 1%;
+}
+
+.article-meta-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.article-badge-desktop {
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.article-date-desktop {
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    white-space: nowrap;
+    text-align: right;
+        font-size: 15px;
+    align-items: center;
+    margin-top: 2%;
+    margin-right: 13%;
+}
+.learn-more-btn {
+    position: absolute;
+    bottom: 110px;   /* adjust until perfect */
+    right: 110px;    /* adjust until perfectly aligned */
+    width: 150px;   /* scale as needed */
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.learn-more-btn:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.75));
+
+}
+
+.footer-desktop {
+    background: #f9f0e6;
+    padding: 0 0 40px;
+    text-align: center;
+    font-family: "Gabarito", sans-serif;
+}
+
+.footer-social-bar {
+    background: #e75d6a;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer-social-bar a {
+    display: inline-block;
+}
+
+.footer-social-icon {
+    width: 40px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social-bar a:hover .footer-social-icon {
+    transform: scale(1.12);
+    opacity: 0.85;
+}
+
+.footer-support-box {
+    background: #ffe1b8;
+    padding: 16px 40px;
+    margin: 30px auto 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #6a5048;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform .2s ease;
+}
+
+.footer-support-box:hover{
+      transform: scale(1.12);
+    opacity: 0.85;
+}
+
+.footer-characters-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 15px 0 25px;
+}
+
+.footer-char {
+    width: 140px;
+    height: auto;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px auto 10px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5a423d;
+    font-size: 15px;
+    transition: text-decoration 0.2s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #5a423d;
+    margin-top: 20px;
+}
+
+.store-hero-desktop {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.store-hero-full {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- DESKTOP PRODUCT GRID LAYOUT --- */
+.store-desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    padding: 20px 0;
+}
+
+/* --- DESKTOP PRODUCT CARD --- */
+.product-card-desktop {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+.product-card-desktop:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(255, 105, 130, 0.25);
+}
+
+/* --- PRODUCT IMAGE --- */
+.product-img-desktop {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- BADGE & HEART ICON --- */
+.product-badge-desktop {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 55px;
+}
+
+.product-heart-desktop {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+}
+
+/* --- NAME --- */
+.product-name-desktop {
+    font-family: "Gabarito", sans-serif;
+    font-size: 15px;
+    color: #444;
+    margin: 12px 0 4px;
+}
+
+/* --- PRICE --- */
+.product-price-desktop {
+    font-family: "Gabarito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF3366;
+    margin-bottom: 12px;
+}
+
+/* --- ADD TO CART BUTTON --- */
+.add-cart-btn-desktop {
+    width: 100%;
+    background: #FF4C73;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-family: "Gabarito", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+.add-cart-btn-desktop img {
+    width: 20px;
+}
+
+/* Hover effect */
+.add-cart-btn-desktop:hover {
+    background: #ff2d59;
+}
+/* --- MAIN DESKTOP LAYOUT --- */
+.store-desktop-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* --- SIDEBAR BOX --- */
+.store-sidebar {
+    position: sticky;
+    top: 20px; /* Makes it stay while scrolling */
+}
+
+.sidebar-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Fredoka", sans-serif;
+    color: #FF4C73;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sidebar-filter-icon {
+    width: 22px;
+}
+
+/* Section Titles */
+.sidebar-section h4 {
+    font-family: "Gabarito", sans-serif;
+    font-size: 15px;
+    color: #444;
+    margin: 20px 0 8px;
+}
+
+/* Checkbox Labels */
+.sidebar-section label {
+    display: block;
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+/* Price Note */
+.sidebar-price-note {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+    font-family: "Gabarito", sans-serif;
+}
+
+/* Price Input Fields */
+.price-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.price-inputs input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 13px;
+}
+
+.store-desktop-toprow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px;
+    padding-right: 10px;
+}
+
+/* Store title */
+.store-desktop-title {
+    font-family: "Fredoka", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #FF4C73;
+    margin: 0;
+}
+
+/* Sort section */
+.store-desktop-sort-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sort-label {
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Dropdown styling */
+.sort-dropdown {
+    border: none;
+    background: transparent;
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Results count */
+.store-results-count {
+    font-family: "Gabarito", sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Pagination Wrapper */
+.store-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 50px 0 80px;
+}
+
+/* Page Number Buttons */
+.page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #b7b7b7;
+    font-family: "Gabarito", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.page-btn:hover {
+    background: #ffe8ed;
+    border-color: #ff7c95;
+}
+
+/* Active Page */
+.page-btn.active {
+    background: #ff637d;
+    border-color: #ff637d;
+    color: #fff;
+}
+
+/* Next Arrow */
+.page-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #f3f3f3;
+    border: 1px solid #ffffff;
+    color: #b7b7b7;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.page-next:hover {
+    background: #e8e8e8;
+}
+
+  .character-desktop-bg {
+    display: block;
+    position: relative;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("images/background_character_desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+  }
+
+  .character-desktop-overlay {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+
+
+
+
